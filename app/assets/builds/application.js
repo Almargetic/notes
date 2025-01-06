@@ -2065,7 +2065,7 @@ var require_react_dom_development = __commonJS({
         return dispatcher;
       }
       "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-      var React18 = require_react(), Internals = {
+      var React19 = require_react(), Internals = {
         d: {
           f: noop,
           r: function() {
@@ -2083,7 +2083,7 @@ var require_react_dom_development = __commonJS({
         },
         p: 0,
         findDOMNode: null
-      }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React18.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+      }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React19.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
       "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error(
         "React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://reactjs.org/link/react-polyfills"
       );
@@ -3539,7 +3539,7 @@ var require_react_dom_client_development = __commonJS({
         "number" === type && getActiveElement(node.ownerDocument) === node || node.defaultValue === "" + value || (node.defaultValue = "" + value);
       }
       function validateOptionProps(element, props) {
-        null == props.value && ("object" === typeof props.children && null !== props.children ? React18.Children.forEach(props.children, function(child) {
+        null == props.value && ("object" === typeof props.children && null !== props.children ? React19.Children.forEach(props.children, function(child) {
           null == child || "string" === typeof child || "number" === typeof child || "bigint" === typeof child || didWarnInvalidChild || (didWarnInvalidChild = true, console.error(
             "Cannot infer the option value of complex children. Pass a `value` prop or use a plain string as children to <option>."
           ));
@@ -17009,13 +17009,13 @@ var require_react_dom_client_development = __commonJS({
         ));
       }
       "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-      var Scheduler = require_scheduler(), React18 = require_react(), ReactDOM = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+      var Scheduler = require_scheduler(), React19 = require_react(), ReactDOM = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
       Symbol.for("react.scope");
       Symbol.for("react.debug_trace_mode");
       var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
       Symbol.for("react.legacy_hidden");
       Symbol.for("react.tracing_marker");
-      var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React18.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+      var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React19.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
       disabledLog.__reactDisabledLog = true;
       var prefix, suffix, reentry = false;
       var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -19735,7 +19735,7 @@ var require_react_dom_client_development = __commonJS({
         }
       };
       (function() {
-        var isomorphicReactPackageVersion = React18.version;
+        var isomorphicReactPackageVersion = React19.version;
         if ("19.0.0" !== isomorphicReactPackageVersion)
           throw Error(
             'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.0.0\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -27842,14 +27842,14 @@ var hello_controller_default = class extends Controller {
 application.register("hello", hello_controller_default);
 
 // app/javascript/components/index.tsx
-var import_react4 = __toESM(require_react());
+var import_react5 = __toESM(require_react());
 var import_client = __toESM(require_client());
 
 // app/javascript/components/App.tsx
-var import_react3 = __toESM(require_react());
+var import_react4 = __toESM(require_react());
 
 // app/javascript/routes/index.tsx
-var import_react2 = __toESM(require_react());
+var import_react3 = __toESM(require_react());
 
 // node_modules/react-router/dist/development/chunk-K6AXKMTT.mjs
 var React3 = __toESM(require_react(), 1);
@@ -30144,22 +30144,50 @@ var encoder = new TextEncoder();
 // app/javascript/components/Home.tsx
 var import_react = __toESM(require_react());
 var Home = () => {
-  return /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement("div", { className: "mx-4 container text-2xl" }, "Welcome Home"));
+  return /* @__PURE__ */ import_react.default.createElement("div", { className: "mx-4 container" }, /* @__PURE__ */ import_react.default.createElement("div", { className: "text-2xl" }, "Welcome Home"), /* @__PURE__ */ import_react.default.createElement(
+    Link,
+    {
+      to: "/notes",
+      className: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+      role: "button"
+    },
+    "View Notes"
+  ));
 };
 var Home_default = Home;
 
+// app/javascript/components/Notes.tsx
+var import_react2 = __toESM(require_react());
+var Notes = () => {
+  const navigate = useNavigate();
+  const [notes, setNotes] = (0, import_react2.useState)([]);
+  (0, import_react2.useEffect)(() => {
+    const url = "/api/v1/notes/index";
+    fetch(url).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      throw new Error("Network response was not ok.");
+    }).then((res) => setNotes(res)).catch(() => navigate("/"));
+  }, []);
+  const allNotes = notes.map((note, index) => /* @__PURE__ */ import_react2.default.createElement("div", { key: index, className: "col-md-6 col-lg-4" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "card mb-4" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "card-body" }, /* @__PURE__ */ import_react2.default.createElement("h5", { className: "card-title" }, note.title), /* @__PURE__ */ import_react2.default.createElement(Link, { to: `/note/${note.id}`, className: "btn custom-button" }, "View Note")))));
+  const noNote = /* @__PURE__ */ import_react2.default.createElement("div", { className: "vw-100 vh-50 d-flex align-items-center justify-content-center" }, /* @__PURE__ */ import_react2.default.createElement("h4", null, "No notes yet. Why not ", /* @__PURE__ */ import_react2.default.createElement(Link, { to: "/new_note" }, "create one")));
+  return /* @__PURE__ */ import_react2.default.createElement(import_react2.default.Fragment, null, /* @__PURE__ */ import_react2.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react2.default.createElement("h1", { className: "display-4" }, "Notes for every occasion"), /* @__PURE__ */ import_react2.default.createElement("p", { className: "lead text-muted" }, "We ve pulled together our most popular notes, our latest additions, and our editor s picks, so there s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react2.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react2.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "text-end mb-3" }, /* @__PURE__ */ import_react2.default.createElement(Link, { to: "/note", className: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" }, "Create New Note")), /* @__PURE__ */ import_react2.default.createElement("div", { className: "row" }, notes.length > 0 ? allNotes : noNote), /* @__PURE__ */ import_react2.default.createElement(Link, { to: "/", className: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" }, "Home"))));
+};
+var Notes_default = Notes;
+
 // app/javascript/routes/index.tsx
-var routes_default = /* @__PURE__ */ import_react2.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react2.default.createElement(Routes, null, /* @__PURE__ */ import_react2.default.createElement(Route, { path: "/", element: /* @__PURE__ */ import_react2.default.createElement(Home_default, null) })));
+var routes_default = /* @__PURE__ */ import_react3.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react3.default.createElement(Routes, null, /* @__PURE__ */ import_react3.default.createElement(Route, { path: "/", element: /* @__PURE__ */ import_react3.default.createElement(Home_default, null) }), /* @__PURE__ */ import_react3.default.createElement(Route, { path: "/notes", element: /* @__PURE__ */ import_react3.default.createElement(Notes_default, null) })));
 
 // app/javascript/components/App.tsx
-var App_default = (props) => /* @__PURE__ */ import_react3.default.createElement(import_react3.default.Fragment, null, routes_default);
+var App_default = (props) => /* @__PURE__ */ import_react4.default.createElement(import_react4.default.Fragment, null, routes_default);
 
 // app/javascript/components/index.tsx
 document.addEventListener("turbo:load", () => {
   const root = (0, import_client.createRoot)(
     document.body.appendChild(document.getElementById("react"))
   );
-  root.render(/* @__PURE__ */ import_react4.default.createElement(App_default, null));
+  root.render(/* @__PURE__ */ import_react5.default.createElement(App_default, null));
 });
 /*! Bundled license information:
 
