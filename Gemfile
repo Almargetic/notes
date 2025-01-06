@@ -50,6 +50,7 @@ gem 'bootsnap', require: false
 
 # Custom gems
 gem 'byebug'
+gem 'faker'
 gem 'haml'
 gem 'rubocop-rails', require: false
 gem 'sassc-rails'
